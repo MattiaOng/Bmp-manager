@@ -29,9 +29,9 @@ class bmp
     ~bmp ( void );
 
     // Load an image from a bmp file
-    void loadImage ( char * ) throw ( bmpException );
+    void loadImage ( const char * ) throw ( bmpException );
     // Save the current bitmap image in a file
-    void saveImage ( char * ) throw ( bmpException );
+    void saveImage ( const char * ) throw ( bmpException );
 
     // Set a pixel with cartesian coordinates ( x, y ) and a rgb color
     void setPixel ( uint32_t , uint32_t ,  Rgb ) throw ( bmpException );

@@ -48,7 +48,7 @@ void bmp < Rgb > :: allocImage ( void )
 }
 
 template < class Rgb >
-void bmp < Rgb > :: loadImage ( char * fileName ) throw ( bmpException )
+void bmp < Rgb > :: loadImage ( const char * fileName ) throw ( bmpException )
 {
     std :: ifstream file( fileName, std :: ios :: in | std :: ios :: binary );
 
@@ -76,7 +76,7 @@ void bmp < Rgb > :: loadImage ( char * fileName ) throw ( bmpException )
 }
 
 template < class Rgb >
-void bmp < Rgb > :: saveImage ( char * fileName ) throw ( bmpException )
+void bmp < Rgb > :: saveImage ( const char * fileName ) throw ( bmpException )
 {
     if ( InfoHeader.headerSz == 0 )
         throw bmpException ( bmpException :: headInit );
