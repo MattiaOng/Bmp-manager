@@ -1,1 +1,1 @@
-This is a C++ class to manage bitmap images, it just leans on input/output with file therefore is portable. It doesn't support standard compression algorithms as RLE-4 and RLE-8.
+This is a C++ class to manage bitmap images, it is portable. It doesn't support standard compression algorithms as RLE-4 and RLE-8.
